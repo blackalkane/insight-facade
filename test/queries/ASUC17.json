@@ -1,0 +1,27 @@
+{
+    "title": "d2 success",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "EQ": {
+                        "rooms_lat": 49.26545
+                    }
+                },
+                {
+                    "EQ": {
+                        "rooms_lon": -123.25533
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_name"
+            ],
+            "ORDER": "rooms_name"
+
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_name":"LSK_200"},{"rooms_name":"LSK_201"},{"rooms_name":"LSK_460"},{"rooms_name":"LSK_462"}]}

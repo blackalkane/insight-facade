@@ -1,0 +1,17 @@
+{
+    "title": "EQ wrong substring",
+    "query": {
+        "WHERE": {
+            "EQ":{ "courseslalala_instructor": "lo, kwang victor"}
+
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courseslalala_uuid"
+            ],
+            "ORDER": "courseslalala_uuid"
+        }
+    },
+    "isQueryValid": false,
+    "result": "not implemented"
+}

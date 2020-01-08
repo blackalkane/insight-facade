@@ -1,0 +1,22 @@
+{
+    "title": "find the overall average of the courses with avg > 90, seperated by department",
+    "query": {
+        "WHERE": {
+            "GT": { "courses_avg": 90 }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_dept", "overallAvg"],
+            "ORDER": "courses_dept"
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["courses_dept"],
+            "APPLY": [{
+                "overallAvg": {
+                    "AVG": "courses_instructor"
+                }
+            }]
+        }
+    },
+    "isQueryValid": false,
+    "result": "ggggggggg"
+}

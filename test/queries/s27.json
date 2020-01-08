@@ -1,0 +1,19 @@
+{
+    "title": "find with audit > 20",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_audit": 21
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_uuid",
+                "courses_audit"
+            ],
+            "ORDER": "courses_audit"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_uuid":"21789","courses_audit":23}]
+}

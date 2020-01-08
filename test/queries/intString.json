@@ -1,0 +1,31 @@
+{
+    "title": "Check when input is a string of number",
+    "query" : {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "123"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "123"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title"
+            ],
+            "order": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result":"gggggggg"
+}

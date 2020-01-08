@@ -1,0 +1,18 @@
+{
+    "title": "wrong para",
+    "query": {
+        "WHERE": {
+          "IS": {
+            "courseswrong_instructor": "*aa*bc, cd*"
+          }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courseswrong_dept",
+                "courseswrong_id"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "not implemented"
+}

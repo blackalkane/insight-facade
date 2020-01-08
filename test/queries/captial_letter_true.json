@@ -1,0 +1,34 @@
+{
+    "title": "capital letter true",
+    "query":
+    {
+        "WHERE": {
+            "NOT": {
+                "NOT": {
+                    "AND": [
+                        {
+                            "GT": {
+                                "courses_avg": 90
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_dept": "CPSC"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid":true,
+    "result":[]
+}

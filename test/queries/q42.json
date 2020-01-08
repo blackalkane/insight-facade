@@ -1,0 +1,30 @@
+{
+    "title": "a querry for an empty OR",
+    "query": {
+        "WHERE": {
+            "AND":
+            [
+                {
+
+                    "IS":{ "courses_dept": "civl"}
+                },
+                {
+                    "OR":
+                    [
+
+                    ]
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_instructor"
+
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "not implemented"
+}

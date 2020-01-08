@@ -1,0 +1,31 @@
+{
+    "title": "trans no apply",
+    "query": {
+        "WHERE": {
+            "AND": [{
+                "IS": {
+                    "rooms_furniture": "*Tables*"
+                }
+            }, {
+                "GT": {
+                    "rooms_seats": 100
+                }
+            }]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_fullname",
+                "maxSeats"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": ["maxSeats"]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["rooms_fullname"]
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented"
+}

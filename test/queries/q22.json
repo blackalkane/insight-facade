@@ -1,0 +1,36 @@
+{
+  "title": "COLUMN one key wrong",
+  "query": {
+    "WHERE": {
+      "OR": [
+        {
+          "AND": [
+            {
+              "GT": {
+                "courses_avg": 90
+              }
+            },
+            {
+              "IS": {
+                "courses_dept": "adhe"
+              }
+            }
+          ]
+        },
+        {
+          "EQ": {
+            "courses_avg": 99
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "coursesuuid"
+      ],
+      "ORDER": "courses_uuid"
+    }
+  },
+  "isQueryValid": false,
+  "result": "not implemented"
+}

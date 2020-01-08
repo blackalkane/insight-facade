@@ -1,0 +1,35 @@
+{
+    "title": "enclosing asterisk",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "courses_avg": 96
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_dept": "*ps*"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 99
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"cnps","courses_avg":99.19},{"courses_dept":"cnps","courses_avg":97.47},{"courses_dept":"cnps","courses_avg":97.47},{"courses_dept":"cnps","courses_avg":96.33},{"courses_dept":"cnps","courses_avg":96.16},{"courses_dept":"epse","courses_avg":96.03},{"courses_dept":"epse","courses_avg":96.03},{"courses_dept":"epse","courses_avg":96.9},{"courses_dept":"epse","courses_avg":96.9},{"courses_dept":"epse","courses_avg":98.08},{"courses_dept":"epse","courses_avg":98.7},{"courses_dept":"epse","courses_avg":98.36},{"courses_dept":"epse","courses_avg":97.29},{"courses_dept":"epse","courses_avg":97.29},{"courses_dept":"epse","courses_avg":96.21},{"courses_dept":"epse","courses_avg":96.21},{"courses_dept":"epse","courses_avg":96.21},{"courses_dept":"epse","courses_avg":96.24},{"courses_dept":"epse","courses_avg":98.8},{"courses_dept":"epse","courses_avg":97.41},{"courses_dept":"epse","courses_avg":98.58},{"courses_dept":"epse","courses_avg":98.58},{"courses_dept":"epse","courses_avg":98.76},{"courses_dept":"epse","courses_avg":98.76},{"courses_dept":"epse","courses_avg":96.23},{"courses_dept":"epse","courses_avg":98.45},{"courses_dept":"epse","courses_avg":98.45},{"courses_dept":"epse","courses_avg":96.33},{"courses_dept":"epse","courses_avg":96.33},{"courses_dept":"epse","courses_avg":97.78},{"courses_dept":"epse","courses_avg":97},{"courses_dept":"epse","courses_avg":97.41},{"courses_dept":"epse","courses_avg":97.69},{"courses_dept":"epse","courses_avg":97.09},{"courses_dept":"epse","courses_avg":97.09},{"courses_dept":"epse","courses_avg":97.67},{"courses_dept":"psyc","courses_avg":97}]}

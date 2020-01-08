@@ -1,0 +1,19 @@
+{
+    "title": "test when WHERE input is null",
+    "query":
+    {
+        "WHERE": {
+            "IS": null
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": false,
+    "result": "false"
+}

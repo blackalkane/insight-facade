@@ -1,0 +1,35 @@
+{
+    "title": "SELECT id, pass WHERE pass > 15 && fail == 0 && id != 403",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "LT": {
+                        "courses_pass": 15
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_fail": 5
+                    }
+                },
+                {
+                    "NOT": {
+                        "IS": {
+                            "courses_id": "403"
+                        }
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "coursesiiid",
+                "courses_pass"
+            ],
+            "ORDER": "courses_pass"
+        }
+    },
+    "isQueryValid": false,
+    "result": "ggggggggg"
+}

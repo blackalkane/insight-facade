@@ -1,0 +1,36 @@
+{
+    "title": "order keys not match",
+    "query": {
+        "WHERE": {
+            "AND": [{
+                "IS": {
+                    "rooms_furniture": "*Tables*"
+                }
+            }, {
+                "GT": {
+                    "rooms_seats": 100
+                }
+            }]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_fullname",
+                "maxSeats"
+            ],
+            "ORDER": {
+                "dir": null,
+                "keys": ["rooms_lon"]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["rooms_fullname"],
+            "APPLY": [{
+                "maxSeats": {
+                    "MAX": "rooms_seats"
+                }
+            }]
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented"
+}

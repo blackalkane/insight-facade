@@ -1,0 +1,22 @@
+{
+    "title": "order dir key wrong",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 95
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor",
+                "courses_avg"
+            ],
+            "ORDER": {
+                "dir": "UPP",
+                "keys": ["courses_avg"]
+            }
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented"
+}

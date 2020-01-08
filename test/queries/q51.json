@@ -1,0 +1,19 @@
+{
+    "title": "Invalid key error",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_average":97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "not implemented"
+}

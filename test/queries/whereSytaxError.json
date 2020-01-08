@@ -1,0 +1,49 @@
+{
+    "title": "test check syntax error (WHERE)",
+    "query":
+    {
+        "WHEasda": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "courses_avg": 90
+                            }
+                        },
+                        {
+                            "LT": {
+                                "courses_avg": 100
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_dept": "adhe"
+                            }
+                        },
+                        {
+                            "NOT": {
+                                "EQ": {
+                                    "courses_avg": 60
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 95
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid":false,
+    "result": "not implemented"
+}

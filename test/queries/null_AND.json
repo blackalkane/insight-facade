@@ -1,0 +1,19 @@
+{
+    "title": "test when AND  is null",
+    "query":
+    {
+        "WHERE": {
+            "AND": null
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_uuid"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": false,
+    "result": "false"
+}

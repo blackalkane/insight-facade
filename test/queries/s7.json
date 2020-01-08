@@ -1,0 +1,23 @@
+{
+    "title": "SELECT id, WHERE instructor == lo, kwang victor",
+    "query": {
+        "WHERE": {
+            "AND":
+            [
+                {
+                    "IS":{ "courses_instructor": "lo, kwang victor"}
+                },{
+                "IS":{ "courses_instructor": "lo, kwang victor"}
+            }]
+
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_uuid"
+            ],
+            "ORDER": "courses_uuid"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_uuid":"2747"},{"courses_uuid":"2774"},{"courses_uuid":"45049"},{"courses_uuid":"47565"},{"courses_uuid":"47882"},{"courses_uuid":"47909"},{"courses_uuid":"79565"},{"courses_uuid":"84839"}]
+}

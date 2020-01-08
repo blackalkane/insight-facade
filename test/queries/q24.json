@@ -1,0 +1,35 @@
+{
+  "title": "COLUMN with no key",
+  "query": {
+    "WHERE": {
+      "OR": [
+        {
+          "AND": [
+            {
+              "GT": {
+                "courses_avg": 90
+              }
+            },
+            {
+              "IS": {
+                "courses_dept": "adhe"
+              }
+            }
+          ]
+        },
+        {
+          "EQ": {
+            "courses_avg": 99
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+      ],
+      "ORDER": "courses_uuid"
+    }
+  },
+  "isQueryValid": false,
+  "result": "not implemented"
+}

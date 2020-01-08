@@ -1,0 +1,37 @@
+{
+    "title": "ApplyRule wrong",
+    "query": {
+        "WHERE": {
+            "AND": [{
+                "IS": {
+                    "rooms_furniture": "*Tables*"
+                }
+            }, {
+                "GT": {
+                    "rooms_seats": 300
+                }
+            }]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_fullname"],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": ["rooms_fullname"]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["rooms_fullname"],
+            "APPLY": [{
+                "maxlol": {"MAX": "rooms_seats"}
+            },{
+                "whatever": "wrong"
+            },{
+                "hahaha": "wrongss",
+                "lololol": "loohbubu"
+            }]
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented"
+}

@@ -1,0 +1,28 @@
+{
+    "title": "SELECT dept, avg WHERE avg >= 97",
+    "query": {
+        "WHERE": {
+            "AND":[{
+                "NOT":{
+                    "NOT":{
+                        "NOT":{
+                            "LT": {
+                                "courses_avg":97
+                            }
+                        }
+                    }
+                }},
+                {"IS":{"courses_dept": "nurs"}}
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"nurs","courses_avg":97.33},{"courses_dept":"nurs","courses_avg":97.33},{"courses_dept":"nurs","courses_avg":97.53},{"courses_dept":"nurs","courses_avg":97.53},{"courses_dept":"nurs","courses_avg":98.21},{"courses_dept":"nurs","courses_avg":98.21},{"courses_dept":"nurs","courses_avg":98.5},{"courses_dept":"nurs","courses_avg":98.5},{"courses_dept":"nurs","courses_avg":98.58},{"courses_dept":"nurs","courses_avg":98.58},{"courses_dept":"nurs","courses_avg":98.71},{"courses_dept":"nurs","courses_avg":98.71}]
+}

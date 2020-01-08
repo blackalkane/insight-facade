@@ -1,0 +1,28 @@
+{
+  "title": "IS key wrong",
+  "query": {
+    "WHERE": {
+      "AND":[
+        {
+          "GT": {
+            "courses_avg":0
+          }
+        },
+        {
+          "IS": {
+            "coursesinstructor":"DNE"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": false,
+  "result": "not implemented"
+}

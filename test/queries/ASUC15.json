@@ -1,0 +1,32 @@
+{
+    "title": "find the max, min and avg score of the courses in CIVL, seperated by title",
+    "query": {
+        "WHERE": {
+            "IS": { "courses_dept": "cpsc" }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_title", "maxS", "minS", "avgS"],
+            "ORDER": "courses_title"
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["courses_title"],
+            "APPLY": [
+                {
+                    "maxS": {
+                        "MAX": "courses_avg"
+                    }
+                },
+                {
+                    "minS": {
+                        "MIN": "courses_avg"
+                    }
+                },
+                {
+                    "avgS": {
+                        "AVG": "courses_avg"
+                    }
+                }]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_title":"adv alg dsgn&anl","maxS":78.32,"minS":68.77,"avgS":72.24},{"courses_title":"adv opertng sysm","maxS":73.37,"minS":68.79,"avgS":70.93},{"courses_title":"adv rel databse","maxS":81.82,"minS":68.76,"avgS":74.32},{"courses_title":"adv software eng","maxS":80.18,"minS":74.04,"avgS":77.11},{"courses_title":"alg in bioin","maxS":91.25,"minS":73.18,"avgS":80.86},{"courses_title":"artif intell 1","maxS":86.2,"minS":81.06,"avgS":82.96},{"courses_title":"artif intell 2","maxS":90.71,"minS":82.55,"avgS":85.16},{"courses_title":"artificial intel","maxS":78.34,"minS":67.48,"avgS":73.11},{"courses_title":"basic alg&data","maxS":86.47,"minS":65.1,"avgS":74.49},{"courses_title":"basics comp syst","maxS":71.45,"minS":67.91,"avgS":69.17},{"courses_title":"comp comm protcl","maxS":91.22,"minS":83.78,"avgS":87.48},{"courses_title":"comp graphics","maxS":82.58,"minS":67.85,"avgS":76.78},{"courses_title":"comp hard&os","maxS":82.27,"minS":70.46,"avgS":73.98},{"courses_title":"compiler constrc","maxS":86,"minS":72.24,"avgS":80.18},{"courses_title":"comptn, progrmng","maxS":85.46,"minS":67.79,"avgS":74.41},{"courses_title":"comptng life sci","maxS":88,"minS":71,"avgS":81.84},{"courses_title":"comptr & society","maxS":80.55,"minS":72.75,"avgS":77.39},{"courses_title":"comput robotics","maxS":83.36,"minS":79.88,"avgS":81.8},{"courses_title":"computer vision","maxS":77.68,"minS":71.8,"avgS":73.93},{"courses_title":"computl ling 1","maxS":94.5,"minS":79.25,"avgS":88.08},{"courses_title":"distrbt'd systms","maxS":81.18,"minS":71.75,"avgS":74.9},{"courses_title":"dta&alg elec eng","maxS":75.82,"minS":72.4,"avgS":74.46},{"courses_title":"func & logic prg","maxS":85.13,"minS":76.52,"avgS":80.71},{"courses_title":"fund alg dsgn&an","maxS":86.33,"minS":78.87,"avgS":83.96},{"courses_title":"hmn-cmpt intract","maxS":88,"minS":81.64,"avgS":84.31},{"courses_title":"hmn-cp interactn","maxS":80.62,"minS":77.43,"avgS":78.84},{"courses_title":"honours thesis","maxS":93.5,"minS":83.08,"avgS":90.38},{"courses_title":"hum-com interact","maxS":81.18,"minS":73.3,"avgS":78.47},{"courses_title":"info visualizatn","maxS":88.68,"minS":88.47,"avgS":88.58},{"courses_title":"intel systems","maxS":78.3,"minS":66.13,"avgS":73.01},{"courses_title":"internet comp","maxS":76.87,"minS":68.54,"avgS":72.57},{"courses_title":"intgrt sys desgn","maxS":89.09,"minS":64,"avgS":82.7},{"courses_title":"intr alg dsgn&an","maxS":73.38,"minS":66.34,"avgS":70.09},{"courses_title":"intr rel databse","maxS":85.5,"minS":71.89,"avgS":76.3},{"courses_title":"intr sftwr eng","maxS":84.6,"minS":72.27,"avgS":78.25},{"courses_title":"intro comp sys","maxS":81.76,"minS":64.62,"avgS":74.04},{"courses_title":"m.sc major essay","maxS":95,"minS":75,"avgS":85.75},{"courses_title":"machine learn i","maxS":91.22,"minS":81.12,"avgS":85.87},{"courses_title":"machine lrn mine","maxS":82.66,"minS":68.4,"avgS":75.69},{"courses_title":"model comptn","maxS":84.56,"minS":67.13,"avgS":75.54},{"courses_title":"num approx/discr","maxS":77.62,"minS":68.35,"avgS":72.76},{"courses_title":"num comp alg prb","maxS":79.46,"minS":68.64,"avgS":75.51},{"courses_title":"para algs & arch","maxS":87.78,"minS":82.65,"avgS":85.06},{"courses_title":"parallel comput","maxS":86.04,"minS":75.61,"avgS":80.51},{"courses_title":"phy user intfc","maxS":89.75,"minS":82.07,"avgS":85.78},{"courses_title":"prog lang princ","maxS":88,"minS":84.25,"avgS":86.02},{"courses_title":"programmng langs","maxS":84.39,"minS":72.83,"avgS":77.25},{"courses_title":"sftwr constructn","maxS":86.15,"minS":68.13,"avgS":73.99},{"courses_title":"software eng","maxS":91.79,"minS":82.5,"avgS":87.44},{"courses_title":"softwr eng proj","maxS":88.39,"minS":78.93,"avgS":84.52},{"courses_title":"student seminar","maxS":92.4,"minS":84.5,"avgS":89.77},{"courses_title":"theory comptg","maxS":79.88,"minS":69.47,"avgS":74.91},{"courses_title":"thry of automata","maxS":94,"minS":83.8,"avgS":89.77}]}

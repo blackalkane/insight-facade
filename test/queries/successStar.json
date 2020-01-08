@@ -1,0 +1,20 @@
+{
+    "title": "find sections taught by fred*",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_instructor": "fred*"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_instructor",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[]
+}

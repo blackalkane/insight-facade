@@ -1,0 +1,36 @@
+{
+    "title": "GT Room number key wrong",
+    "query": {
+        "WHERE": {
+            "AND": [{
+                "IS": {
+                    "rooms_furniture": "*Tables*"
+                }
+            }, {
+                "GT": {
+                    "rooms_seats": "asdasd"
+                }
+            }]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_fullname",
+                "maxAvg"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": ["maxAvg"]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["rooms_fullname"],
+            "APPLY": [{
+                "maxAvg": {
+                    "AVG": "rooms_seats"
+                }
+            }]
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented"
+}

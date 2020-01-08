@@ -1,0 +1,36 @@
+{
+    "title": "MAX not apply",
+    "query": {
+        "WHERE": {
+            "AND": [{
+                "IS": {
+                    "rooms_furniture": "*Tables*"
+                }
+            }, {
+                "GT": {
+                    "rooms_seats": 100
+                }
+            }]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_fullname",
+                "maxSeats"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": ["maxSeats"]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["rooms_fullname"],
+            "APPLY": [{
+                "maxSeats": {
+                    "SUM": "rooms_name"
+                }
+            }]
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented"
+}

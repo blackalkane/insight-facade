@@ -1,0 +1,30 @@
+{
+    "title": "a querry for an empty AND",
+    "query": {
+        "WHERE": {
+            "AND":
+            [
+                {
+
+                    "IS":{ "coursess_dept": "civl"}
+                },
+                {
+                    "AND":
+                    [
+                        null
+                    ]
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_instructor"
+
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "not implemented"
+}

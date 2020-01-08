@@ -1,0 +1,19 @@
+{
+    "title": "many auditors",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_audit": 8
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_id",
+                "courses_instructor"
+            ],
+            "ORDER": "courses_id"
+        }
+    },
+    "isQueryValid": true,
+    "result": [{"courses_id":"100","courses_instructor":""},{"courses_id":"100","courses_instructor":""},{"courses_id":"295","courses_instructor":""},{"courses_id":"302","courses_instructor":""},{"courses_id":"430","courses_instructor":""},{"courses_id":"505","courses_instructor":"tba"},{"courses_id":"505","courses_instructor":""},{"courses_id":"683","courses_instructor":"zumbo, bruno"},{"courses_id":"683","courses_instructor":""}]
+}

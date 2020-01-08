@@ -1,0 +1,30 @@
+{
+    "title": "check for greater and less out of range problem",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_avg": 90
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_avg": 80
+                    }
+                }
+            ]
+        },
+
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

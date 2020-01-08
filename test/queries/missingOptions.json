@@ -1,0 +1,13 @@
+{"title": "SELECT avg > 99 without options",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 99
+            }
+        }
+
+    },
+
+    "isQueryValid": false,
+    "result": "not valid data"
+}

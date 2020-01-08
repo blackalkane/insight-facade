@@ -1,0 +1,22 @@
+{
+    "title": "does not exist course name",
+    "query":{
+        "WHERE": {
+
+            "IS": {
+                "courses_dept": "abcd"
+            }
+
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid":true,
+    "result":[]
+}

@@ -1,0 +1,40 @@
+{
+    "title": "d2 success",
+    "query": {
+        "WHERE": {
+            "AND": [{
+                "IS": {
+                    "rooms_furniture": "*Tables*"
+                }
+            }, {
+                "GT": {
+                    "rooms_seats": 300
+                }
+            }]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "maxSeats1"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": ["maxSeats1"]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["rooms_shortname"],
+            "APPLY": [{
+                "maxSeats1": {
+                    "MAX": "rooms_seats"
+                }
+            },
+                {
+                    "maxSeats2": {
+                        "MAX": "rooms_seats"
+                    }
+                }]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_shortname":"OSBO","maxSeats1":442},{"rooms_shortname":"HEBB","maxSeats1":375},{"rooms_shortname":"LSC","maxSeats1":350}]}

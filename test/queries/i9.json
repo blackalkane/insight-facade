@@ -1,0 +1,33 @@
+{
+    "title": "wrong bound",
+    "query": {
+        "WHERE": {
+            "AND": [
+                  {
+                    "GT": {
+                        "courses_avg": 95
+                          },
+                    "LT": {
+                        "courses_avg": 5
+                          }
+                  }
+                    ]
+                  },
+            "OPTIONS": {
+                "COLUMNS": [
+                    "courses_dept",
+                    "courses_id",
+                    "courses_avg",
+                    "courses_instructor",
+                    "courses_tle",
+                    "courses_pass",
+                    "courses_fail",
+                    "courses_audit",
+                    "courses_uuid"
+                    ],
+                "ORDER": "courses_audit"
+                }
+    },
+    "isQueryValid": false,
+    "result": "not implemented"
+}

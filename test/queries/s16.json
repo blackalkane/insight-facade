@@ -1,0 +1,19 @@
+{
+    "title": "SELECT uuid, WHERE instructor == empty && uuid = 2774",
+    "query": {
+        "WHERE": {
+            "AND":[
+                {"IS":{ "courses_instructor":""}},
+                {"IS":{"courses_uuid":"2774"}}
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_uuid"
+            ],
+            "ORDER": "courses_uuid"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

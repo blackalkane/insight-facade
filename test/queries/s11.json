@@ -1,0 +1,26 @@
+{
+    "title": "SELECT dept, avg WHERE avg < 9218382 && uuid = 2774",
+    "query": {
+        "WHERE": {
+            "AND":[
+                {
+                    "LT": {
+                        "courses_avg":9218382
+                    }},
+
+                {
+                    "IS":{"courses_uuid":"2774"}
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"civl","courses_avg":87.67}]
+}

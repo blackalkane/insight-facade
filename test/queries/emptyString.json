@@ -1,0 +1,31 @@
+{
+    "title": "Check given criteria when it's an empty string",
+    "query" : {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": ""
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": ""
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title"
+            ],
+            "order": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result":"gggggggggggg"
+}

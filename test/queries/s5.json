@@ -1,0 +1,18 @@
+{
+    "title": "SELECT dept, id, WHERE title == envr'tl lab anly",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_title": "envr'tl lab anly"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"civl","courses_id":"407"},{"courses_dept":"civl","courses_id":"407"},{"courses_dept":"civl","courses_id":"407"},{"courses_dept":"civl","courses_id":"407"},{"courses_dept":"civl","courses_id":"407"},{"courses_dept":"civl","courses_id":"407"},{"courses_dept":"civl","courses_id":"407"},{"courses_dept":"civl","courses_id":"407"},{"courses_dept":"civl","courses_id":"407"},{"courses_dept":"civl","courses_id":"407"},{"courses_dept":"civl","courses_id":"407"},{"courses_dept":"civl","courses_id":"407"},{"courses_dept":"civl","courses_id":"407"},{"courses_dept":"civl","courses_id":"407"},{"courses_dept":"civl","courses_id":"407"},{"courses_dept":"civl","courses_id":"407"},{"courses_dept":"civl","courses_id":"407"},{"courses_dept":"civl","courses_id":"407"}]
+}

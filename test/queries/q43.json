@@ -1,0 +1,17 @@
+{
+    "title": "wrong substring for EQ",
+    "query": {
+        "WHERE": {
+            "EQ":{ "courseswrong_instructor": 12}
+
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courseswrong_uuid"
+            ],
+            "ORDER": "courseslalala_uuid"
+        }
+    },
+    "isQueryValid": false,
+    "result": "not implemented"
+}

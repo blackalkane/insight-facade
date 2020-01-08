@@ -1,0 +1,21 @@
+{
+    "title": "check chinese charatcers",
+    "query":
+    {
+        "WHERE": {
+            "GT": {
+                "平均分":97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid":false,
+    "result": "error"
+}
+

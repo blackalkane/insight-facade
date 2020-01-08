@@ -1,0 +1,12 @@
+{
+    "query1": "simple query IS comparison for department with two columns and old order syntax",
+    "query2": "a simple query with MComparison and a single order key",
+    "query3": "a query with MComparison of float number",
+    "query4": "a query with OR",
+    "query5": "a query with AND of SComparison and MComparison",
+    "query6": "a query with transformation",
+    "query7": "a super complex query",
+    "query8": "a query with empty order key",
+    "query9": "a query with empty string for WHERE",
+    "query10": "a query with empty column"
+}

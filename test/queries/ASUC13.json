@@ -1,0 +1,41 @@
+{
+    "title": "d2 success",
+    "query": {
+        "WHERE": {
+            "AND": [{
+                "IS": {
+                    "rooms_furniture": "*Tables*"
+                }
+            }, {
+                "GT": {
+                    "rooms_seats": 200
+                }
+            }]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "avglat",
+                "avglon"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": ["rooms_shortname"]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["rooms_shortname"],
+            "APPLY": [{
+                "avglat": {
+                    "AVG": "rooms_lat"
+                }
+            },
+                {
+                    "avglon": {
+                        "AVG": "rooms_lon"
+                    }
+                }]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_shortname":"SRC","avglat":49.27,"avglon":-123.25},{"rooms_shortname":"PHRM","avglat":49.26,"avglon":-123.24},{"rooms_shortname":"OSBO","avglat":49.26,"avglon":-123.24},{"rooms_shortname":"LSK","avglat":49.27,"avglon":-123.26},{"rooms_shortname":"LSC","avglat":49.26,"avglon":-123.24},{"rooms_shortname":"HEBB","avglat":49.27,"avglon":-123.25},{"rooms_shortname":"ANGU","avglat":49.26,"avglon":-123.25}]}

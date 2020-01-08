@@ -1,0 +1,20 @@
+{
+    "title": "EQ key wrong",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "DNE": "courses_dept"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented."
+}

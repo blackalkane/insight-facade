@@ -1,0 +1,35 @@
+{
+    "title": "wrong with COLs para",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "GT": {
+                        "courses_pass": 15
+                    }
+                },
+                {
+                    "EQ": {
+                        "courses_fail": 0
+                    }
+                },
+                {
+                    "NOT": {
+                        "IS": {
+                            "courses_id": "403"
+                        }
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "coursesiiid",
+                "courses_apass"
+            ],
+            "ORDER": "courses_pass"
+        }
+    },
+    "isQueryValid": false,
+    "result": "not implemented"
+}

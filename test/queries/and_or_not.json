@@ -1,0 +1,66 @@
+{
+    "title": "integration of and, or, not",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "courses_avg": 90
+                            }
+                        },
+                        {
+                            "NOT": {
+                                "LT": {
+                                    "courses_avg": 99
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 98
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "crwr",
+            "courses_id": "599",
+            "courses_avg": 98
+        },
+        {
+            "courses_dept": "crwr",
+            "courses_id": "599",
+            "courses_avg": 98
+        },
+        {
+            "courses_dept": "cnps",
+            "courses_id": "574",
+            "courses_avg": 99.19
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "527",
+            "courses_avg": 99.78
+        },
+        {
+            "courses_dept": "math",
+            "courses_id": "527",
+            "courses_avg": 99.78
+        }
+    ]
+}

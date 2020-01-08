@@ -1,0 +1,22 @@
+{
+    "title": "order keys wrong",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 95
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_instructor",
+                "courses_avg"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": ["rooms_avg"]
+            }
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented"
+}

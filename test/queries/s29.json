@@ -1,0 +1,18 @@
+{
+    "title": "SELECT dept, id, WHERE instructor == wallace, craig any",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_instructor": "wallace, craig*"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"courses_dept":"civl","courses_id":"402"}]
+}

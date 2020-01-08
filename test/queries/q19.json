@@ -1,0 +1,29 @@
+{
+  "title": "IS input string out of bound",
+  "query": {
+    "WHERE": {
+      "AND":[
+        {
+          "GT": {
+            "courses_avg":0
+          }
+        },
+        {
+          "IS": {
+            "courses_avg":-1
+          }
+        }
+      ]
+
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": false,
+  "result": "not implemented"
+}

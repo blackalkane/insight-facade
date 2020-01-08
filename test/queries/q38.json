@@ -1,0 +1,14 @@
+{
+    "title": "many empty error",
+    "query": {
+        "WHERE": {
+
+        },
+
+
+        "OPTIONS": {
+        }
+    },
+    "isQueryValid": false,
+    "result": "not implemented"
+}

@@ -1,0 +1,31 @@
+{
+    "title": "Check all math 104 courses with all information displayed",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "IS": {
+                        "courses_dept": "math"
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": "104"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title"
+            ],
+            "order": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "ggggggggg"
+}

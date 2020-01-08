@@ -1,0 +1,18 @@
+{
+    "title": "wrong string",
+    "query": {
+        "WHERE": {
+          "IS": {
+            "courseswrong_instructor": "advadv*e, craig"
+          }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courseswrong_dept",
+                "courseswrong_id"
+            ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "not implemented"
+}

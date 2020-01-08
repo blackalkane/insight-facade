@@ -1,0 +1,21 @@
+{
+    "title": "checks syntax error missing underscore",
+    "query":
+    {
+        "WHERE": {
+            "GT": {
+                "courses_avg":97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "coursesavg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "not implemented"
+
+}

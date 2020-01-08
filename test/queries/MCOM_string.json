@@ -1,0 +1,20 @@
+{
+    "title": "course_avg greater string",
+    "query":
+    {
+        "WHERE": {
+            "GT": {
+                "courses_avg": "100"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result":"error"
+}

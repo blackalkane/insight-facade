@@ -1,0 +1,38 @@
+{
+    "title": "key is outside of column no underscore",
+    "query":
+    {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "LT": {
+                                "courses_avg": 10
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_dept": "*"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 99
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_avg"
+            ],
+            "coursesuuid" : 123
+        }
+    },
+    "isQueryValid":false,
+    "result":"error"
+}

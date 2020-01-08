@@ -1,0 +1,34 @@
+{
+    "title": "d2 success",
+    "query": {"WHERE": {
+            "AND": [{
+                "IS": {
+                    "rooms_furniture": "*Tables*"
+                }
+            }, {
+                "GT": {
+                    "rooms_seats": 100
+                }
+            }]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "seatCount"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": ["seatCount", "rooms_shortname"]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["rooms_shortname"],
+            "APPLY": [{
+                "seatCount": {
+                    "COUNT": "rooms_seats"
+                }
+            }]
+        }
+    },
+    "isQueryValid": true,
+    "result":[{"rooms_shortname":"SWNG","seatCount":3},{"rooms_shortname":"PHRM","seatCount":2},{"rooms_shortname":"MCLD","seatCount":2},{"rooms_shortname":"LSK","seatCount":2},{"rooms_shortname":"LSC","seatCount":2},{"rooms_shortname":"IBLC","seatCount":2},{"rooms_shortname":"DMP","seatCount":2},{"rooms_shortname":"WOOD","seatCount":1},{"rooms_shortname":"SRC","seatCount":1},{"rooms_shortname":"OSBO","seatCount":1},{"rooms_shortname":"HEBB","seatCount":1},{"rooms_shortname":"FRDM","seatCount":1},{"rooms_shortname":"CHBE","seatCount":1},{"rooms_shortname":"BUCH","seatCount":1},{"rooms_shortname":"ANGU","seatCount":1}]}

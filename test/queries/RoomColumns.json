@@ -1,0 +1,28 @@
+{
+    "title": "columns not in group or apply",
+    "query": {
+        "WHERE": {
+            "IS": { "courses_dept": "CPSC" }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_avg", "courses_title", "maxAvg", "avg"],
+            "ORDER": "courses_title"
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": ["courses_title"],
+            "APPLY": [
+                {
+                    "maxAvg": {
+                        "MAX": "courses_avg"
+                    }
+                },
+                {
+                    "avg": {
+                        "AVG": "courses_avg"
+                    }
+                }]
+        }
+    },
+    "isQueryValid": false,
+    "result": "Not implemented"
+}

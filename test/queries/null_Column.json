@@ -1,0 +1,17 @@
+{
+    "title": "null column",
+    "query":
+    {
+        "WHERE": {
+            "GT": {
+                "courses_avg":97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": null,
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "not implemented"
+}

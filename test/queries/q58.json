@@ -1,0 +1,19 @@
+{
+    "title": "missing data",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "Course_avgwww":97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "wrong_avg",
+                "XXX_xxx"
+            ],
+            "ORDER": "wrong_avgwww"
+        }
+    },
+    "isQueryValid": false,
+    "result": "not implemented"
+}
